@@ -619,10 +619,18 @@
 }
 
 @media only screen and (max-width: 1024px) {
+
     .homeSection4 {
         padding: 50px 35px 0 35px;
-
     }
+
+    .homeSection4ImagesContainer {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
 }
 
 
