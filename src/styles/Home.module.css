@@ -673,12 +673,8 @@
     }
     
     .thumbnailContainer {
-        flex: none;           /* Ne pas étirer les vignettes */
-        /* width: 200px;          */
-        /* Largeur de chaque vignette */
-        /* margin-right: 20px;    */
-        /* Espacer les vignettes */
-        scroll-snap-align: start; /* Assure que les vignettes s'alignent correctement lors du défilement */
+        flex: none;      
+        scroll-snap-align: start; 
     }
     
     /* Assurer que le dernier élément a moins de marge à droite pour éviter un espace vide */
