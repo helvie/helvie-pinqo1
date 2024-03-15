@@ -77,7 +77,7 @@ function Header() {
 
                     {/* --------------------------- Logo organisme ------------------------------*/}
                     
-                    <div className={styles.logoContainer}><img src='/images/vector.png' alt='Logo' />
+                    <div className={styles.logoContainer}><img  className={styles.imageLogo} src='images/vector.png' alt='Logo' />
                         <div className={styles.navbarOrganismTitle}>HOLOCOIN</div>
                     </div>
 
