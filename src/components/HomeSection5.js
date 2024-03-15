@@ -23,15 +23,6 @@ function HomeSection5(props) {
     // Définition de la taille des vignettes en fonction de la taille des écrans
     const thumbnailParametersSize = props.width < 1024 ? thumbnailsArray.medium : thumbnailsArray.large;
 
-    const team = [];
-
-    for (let nbImage = 0; nbImage < 4; nbImage++) {
-        team.push(<Thumbnail
-            key={nbImage}
-            parameters={thumbnailParametersSize}
-            image="images/robot.png"
-            alt="robot" />);
-    }
 
     useEffect(() => {
 
@@ -91,15 +82,7 @@ function HomeSection5(props) {
 
             {/* -------------------------------- Zone vignettes ---------------------------- */}
 
-            <div className={`${styles.homeSection4} ${styles.section}`} id="Team">
 
-<h2 className={styles.homeTitle}><span>Team</span></h2>
-
-<div className={styles.homeSection4ImagesContainer}>
-    {team}
-</div>
-
-</div>
             <div className={styles.homeSection5ImagesContainer}>
                 {rarityImagesDisplay && rarityImagesDisplay}
             </div>
