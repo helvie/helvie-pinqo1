@@ -1,6 +1,8 @@
 import styles from '../styles/Home.module.css';
 
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 function HomeSection6(props) {
 
@@ -10,7 +12,7 @@ function HomeSection6(props) {
 
     return (
 
-        <div className={`${styles.homeSection6} ${styles.section}`} id='Contact'>
+        <div className={styles.homeSection6} id='Contact'>
 
             {mobile && <h2 className={`${styles.homeTitle} ${styles.homeSection6Title}`}>
                 <span>Contact us</span>

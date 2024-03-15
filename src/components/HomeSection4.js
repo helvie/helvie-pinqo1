@@ -1,9 +1,11 @@
 import styles from '../styles/Home.module.css';
-import Thumbnail from './Thumbnail';
+import Thumbnail from './DiverseComponents/Thumbnail';
 // Tableau contenant les différentes tailles de vignettes
-import { thumbnailsArray } from '@/utils/datas';
+import { thumbnailsArray } from '../datas/datas';
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 function HomeSection4(props) {
 
@@ -25,7 +27,7 @@ function HomeSection4(props) {
 
     return (
 
-        <div className={`${styles.homeSection4} ${styles.section}`} id="Team">
+        <div className={styles.homeSection4} id="Team">
 
             <h2 className={styles.homeTitle}><span>Team</span></h2>
 

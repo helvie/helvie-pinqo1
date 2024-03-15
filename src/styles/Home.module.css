@@ -174,7 +174,7 @@
     margin: 0 0 108px 0;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1200;
     background-color: var(--black900)
 }
 
@@ -232,7 +232,7 @@
     filter: brightness(50%);
 }
 
-.navbarButton {
+.navbar .classicButton {
     padding: 10px 25px;
     margin-top: -10px;
 }
@@ -256,7 +256,7 @@
 
 @media only screen and (max-width: 1024px) {
 
-    .navbarButton {
+    .navbar .classicButton {
         display: none;
     }
 
@@ -328,7 +328,7 @@
     height: 422px;
 }
 
-.homeSection1LogosContainer {
+.homeSection1 .socialNetworksContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -338,7 +338,7 @@
     margin-top: 25px;
 }
 
-.homeSection1LogosContainer>* {
+.homeSection1 .socialNetworksContainer > * {
     width: 100%;
     width: 25px;
 }
@@ -353,7 +353,7 @@
     margin-bottom: 25px;
 }
 
-.homeSection1Button {
+.homeSection1 .classicButton {
     align-self: flex-start;
 }
 
@@ -378,7 +378,7 @@
         position: absolute;
     }
 
-    .homeSection1Button {
+    .homeSection1 .classicButton {
         align-self: center;
     }
 
@@ -397,7 +397,7 @@
         padding-top: 47px;
     }
 
-    .homeSection1LogosContainer {
+    .homeSection1 .socialNetworksContainer {
         display: none;
     }
 
@@ -448,7 +448,7 @@
     margin-left: 21vh;
 }
 
-.homeSection2Button {
+.homeSection2 .classicButton {
     background-color: transparent;
     border: solid 1px var(--white);
     margin-top: 45px;
@@ -502,7 +502,7 @@
         margin-top: 57px;
     }
 
-    .homeSection2Button {
+    .homeSection2 .classicButton {
         display: flex;
         align-self: center;
         margin-top: 39px;
@@ -654,7 +654,7 @@
     background-color: var(--black800);
 }
 
-.homeSection5Title {
+.homeSection5 .homeTitle {
     align-self: center;
 }
 
@@ -681,7 +681,7 @@
         -webkit-overflow-scrolling: touch;
     }
 
-    .homeSection5Title {
+    .homeSection5 .homeTitle {
         align-self: flex-start;
     }
 }
@@ -758,7 +758,7 @@
         max-width: 100%;
     }
 
-    .homeSection6Title {
+    .homeSection6 .homeTitle {
         margin-left: 35px;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -797,7 +797,7 @@
     cursor: pointer;
 }
 
-.footerIconsContainer {
+.footer .socialNetworksContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -807,7 +807,7 @@
     margin-right: 30px;
 }
 
-.footerIconsContainer>*:hover {
+.footer .socialNetworksContainer >*:hover {
     cursor: pointer;
     color: var(--white);
 }

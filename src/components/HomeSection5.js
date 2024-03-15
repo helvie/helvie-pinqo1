@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css';
-import Thumbnail from './Thumbnail';
+import Thumbnail from './DiverseComponents/Thumbnail';
 // Tableau contenant les différentes tailles de vignettes
-import { thumbnailsArray } from '@/utils/datas';
+import { thumbnailsArray } from '../datas/datas';
+import PagesArrows from './DiverseComponents/PagesArrows';
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 function HomeSection5(props) {
 
@@ -74,9 +77,9 @@ function HomeSection5(props) {
 
 
     return (
-        <div className={`${styles.homeSection5} ${styles.section}`} id='Rarity'>
+        <div className={styles.homeSection5} id='Rarity'>
 
-            <h2 className={`${styles.homeTitle} ${styles.homeSection5Title}`}>
+            <h2 className={styles.homeTitle}>
                 <span>Rarity</span>
             </h2>
 
@@ -87,21 +90,15 @@ function HomeSection5(props) {
                 {rarityImagesDisplay && rarityImagesDisplay}
             </div>
 
-            {/* --------------------------- Boutons changement de page -------------------------- */}
+            {/* --------------------------- Sélection page ---------------------------- */}
 
+            <PagesArrows
+                page={page}
+                nbPages={nbPages}
+                nextImages={nextImages}
+                prevImages={prevImages}
+            />
 
-            <div className={styles.containerOfArrowsContainer}>
-
-                <div className={styles.arrowsContainer}>
-
-                    <div className={styles.arrowsButtonFirstContainer}>
-                        {page && <p>{page}/{nbPages}</p>}
-                        <div className={`${styles.arrowButton} ${styles.arrowLeftButton}`} onClick={() => prevImages()}><span>&#60;</span></div>
-                    </div>
-                    <div className={styles.arrowButton} onClick={() => nextImages()}>&#62;</div>
-
-                </div>
-            </div>
         </div>
     );
 }

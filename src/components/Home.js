@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import Header from './Header.js';
+import Header from './Header/Header.js';
 import HomeSection1 from './HomeSection1.js';
 import HomeSection2 from './HomeSection2.js';
 import HomeSection3 from './HomeSection3.js';
 import HomeSection4 from './HomeSection4.js';
 import HomeSection5 from './HomeSection5.js';
 import HomeSection6 from './HomeSection6.js';
-import Footer from './Footer.js';
+import Footer from './Footer/Footer.js';
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
 

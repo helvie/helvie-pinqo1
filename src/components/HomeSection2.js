@@ -1,15 +1,17 @@
 import styles from '../styles/Home.module.css';
-import Thumbnail from './Thumbnail';
+import Thumbnail from './DiverseComponents/Thumbnail';
 // Tableau contenant les différentes tailles de vignettes
-import { thumbnailsArray } from '@/utils/datas';
+import { thumbnailsArray } from '../datas/datas';
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 function HomeSection2() {
 
     return (
 
-        <div className={`${styles.homeSection2} ${styles.section}`} id="Blog">
+        <div className={styles.homeSection2} id="Blog">
 
             <div className={styles.homeSection2Content}>
 
@@ -28,7 +30,7 @@ function HomeSection2() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus in urna nec suspendisse quis mus commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus in urna nec suspendisse quis mus commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
 
-                    <button className={`${styles.classicButton} ${styles.homeSection2Button}`}>Join Discord</button>
+                    <button className={styles.classicButton}>Join Discord</button>
                 </div>
 
             </div>

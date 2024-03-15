@@ -9,7 +9,7 @@ function HomeSection3() {
 
     return (
 
-        <div className={`${styles.homeSection3} ${styles.section}`} id='Roadmap'>
+        <div className={styles.homeSection3} id='Roadmap'>
 
             <div className={styles.homeSection3Circle}>
 

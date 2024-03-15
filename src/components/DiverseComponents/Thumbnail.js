@@ -1,7 +1,9 @@
-import styles from '../styles/Home.module.css';
+import styles from '../../styles/Home.module.css';
 import ImagesContainer from './ImagesContainer';
 
+
 ///////////////////////////////////////////////////////////////////////////////////////////////
+
 
 const Thumbnail = (props) => {
 
