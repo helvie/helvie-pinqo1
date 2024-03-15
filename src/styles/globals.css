@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'interExtraLight';
+  src: local('Inter-ExtraLight'), url(../fonts/Inter-ExtraLight.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'interRegular';
+  src: local('Inter-Regular'), url(../fonts/Inter-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'interSemiBold';
+  src: local('Inter-SemiBold'), url(../fonts/Inter-SemiBold.ttf) format('truetype');
+}
+
+
+
+:root {
+  --black: #000000;
+  --black900: #0D0F15;
+  --black800: #13151B;
+  --white: #FFFFFF;
+  --grey100: #F8F8F8;
+  --grey200: #D0D0D0;
+  --grey400: #999CA3;
+  --red: #DD364D;
+}
+
+body {
+  font-family: 'interRegular', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: var(--black900);
+  color: var(--grey400)
+}
+
+h1 {
+  font-family: 'interSemiBold', sans-serif;
+  font-size: 60px;
+  color: var(--white);
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-family: 'interSemiBold', sans-serif;
+  font-size: 32px;
+  color: var(--white);
+  margin: 0;
+
+}
+
+p {
+  font-family: 'interRegular', sans-serif;
+  font-size: 16px;
+  color: var(--grey100);
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+button {
+  display: inline-block;
+  width: auto;
+}
+
+ul {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 38px;
+  }
+
+}
