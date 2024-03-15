@@ -160,11 +160,6 @@
     flex-direction: row;
 }
 
-.imageLogo {
-    width:20px;
-    height:20px;
-}
-
 .navbar {
     display: flex;
     flex-direction: row;
