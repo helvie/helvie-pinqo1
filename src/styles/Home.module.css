@@ -633,12 +633,12 @@
 .homeSection5 {
     display: flex;
     flex-direction: column;
-    padding: 50px 35px 0 35px;
+    padding: 50px 55px 0 55px;
     background-color: var(--black800);
 }
 
 .homeSection5Title {
-    align-self: flex-start;
+    align-self: center;
 }
 
 .homeSection5ImagesContainer {
@@ -651,6 +651,31 @@
 @media only screen and (max-width: 1024px) {
     .containerOfArrowsContainer {
         display: none;
+    }
+
+    .homeSection5 {
+        padding: 50px 35px 0 35px;
+    }
+
+    .homeSection5ImagesContainer {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .thumbnailContainer {
+        flex: none;           /* Ne pas étirer les vignettes */
+        /* width: 200px;          */
+        /* Largeur de chaque vignette */
+        /* margin-right: 20px;    */
+        /* Espacer les vignettes */
+        scroll-snap-align: start; /* Assure que les vignettes s'alignent correctement lors du défilement */
+    }
+    
+    /* Assurer que le dernier élément a moins de marge à droite pour éviter un espace vide */
+    .vignette:last-child {
+        margin-right: 0;
     }
 }
 
