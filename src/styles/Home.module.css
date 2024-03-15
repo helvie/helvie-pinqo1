@@ -85,6 +85,15 @@
         margin-right: 0;
     }
 
+    .thumbnailContainer {
+        flex: none;      
+        scroll-snap-align: start; 
+    }
+    
+    .thumbnailContainer:last-child {
+        margin-right: 0;
+    }
+
 }
 
 
@@ -671,15 +680,9 @@
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
     }
-    
-    .thumbnailContainer {
-        flex: none;      
-        scroll-snap-align: start; 
-    }
-    
-    /* Assurer que le dernier élément a moins de marge à droite pour éviter un espace vide */
-    .vignette:last-child {
-        margin-right: 0;
+
+    .homeSection5Title {
+        align-self: flex-start;
     }
 }
 

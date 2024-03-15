@@ -14,7 +14,10 @@ function HomeSection4(props) {
     const team = [];
 
     for (let nbImage = 0; nbImage < 4; nbImage++) {
-        team.push(<Thumbnail key={nbImage} parameters={thumbnailParametersSize} image="images/robot.png"
+        team.push(<Thumbnail
+            key={nbImage}
+            parameters={thumbnailParametersSize}
+            image="images/robot.png"
             alt="robot" />);
     }
 
